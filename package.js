@@ -1,0 +1,18 @@
+Package.describe({
+  name: 'elevate:feedback',
+  summary: 'Package to provide feedback (vibrate and sound) on both cordova and browser',
+  version: '0.0.1',
+  git: 'https://github.com/ElevateDevelopmentAndDesign/meteor-feedback'
+});
+
+Package.onUse(function(api) {
+  api.versionsFrom('METEOR@1.0');
+
+  api.addFiles('client.js','client');
+
+  Cordova.depends({
+    "org.apache.cordova.media": "0.2.15",
+    "org.apache.cordova.vibration": "0.3.12"
+  });
+  api.export("Feedback", 'client');
+});
