@@ -1,7 +1,7 @@
 Package.describe({
   name: 'elevatedevdesign:feedback',
   summary: 'Package to provide feedback (vibrate and sound) on both cordova and browser',
-  version: '0.0.2-rc.1',
+  version: '0.0.3-rc.1',
   git: 'https://github.com/ElevateDevelopmentAndDesign/meteor-feedback'
 });
 
